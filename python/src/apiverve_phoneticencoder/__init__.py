@@ -1,1 +1,3 @@
-from .apiClient import PhoneticAPIClient
+from .apiClient import PhoneticAPIClient, PhoneticAPIClientError
+
+__all__ = ['PhoneticAPIClient', 'PhoneticAPIClientError']
