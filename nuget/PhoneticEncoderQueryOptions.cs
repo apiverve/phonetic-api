@@ -12,14 +12,12 @@ namespace APIVerve.API.PhoneticEncoder
     {
         /// <summary>
         /// The word to encode phonetically
-        /// Example: smith
         /// </summary>
         [JsonProperty("word")]
         public string Word { get; set; }
 
         /// <summary>
-        /// Algorithm to use: 'soundex', 'metaphone', or 'both' (default)
-        /// Example: both
+        /// Algorithm to use
         /// </summary>
         [JsonProperty("algorithm")]
         public string Algorithm { get; set; }
