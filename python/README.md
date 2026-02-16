@@ -44,7 +44,10 @@ from apiverve_phoneticencoder.apiClient import PhoneticAPIClient
 # Initialize the client with your APIVerve API key
 api = PhoneticAPIClient("[YOUR_API_KEY]")
 
-query = { "word": "smith", "algorithm": "both" }
+query = {
+    "word": "smith",
+    "algorithm": "both"
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "word": "smith", "algorithm": "both" }
+query = {
+    "word": "smith",
+    "algorithm": "both"
+}
 ```
 
 ###### Simple Request
@@ -122,7 +128,10 @@ from apiverve_phoneticencoder.apiClient import PhoneticAPIClient, PhoneticAPICli
 
 api = PhoneticAPIClient("[YOUR_API_KEY]")
 
-query = { "word": "smith", "algorithm": "both" }
+query = {
+    "word": "smith",
+    "algorithm": "both"
+}
 
 try:
     result = api.execute(query)
@@ -143,7 +152,10 @@ from apiverve_phoneticencoder.apiClient import PhoneticAPIClient, PhoneticAPICli
 
 api = PhoneticAPIClient("[YOUR_API_KEY]")
 
-query = { "word": "smith", "algorithm": "both" }
+query = {
+    "word": "smith",
+    "algorithm": "both"
+}
 
 try:
     result = api.execute(query)
@@ -177,7 +189,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_phoneticencoder.apiClient import PhoneticAPIClient, PhoneticAPIClientError
 
-query = { "word": "smith", "algorithm": "both" }
+query = {
+    "word": "smith",
+    "algorithm": "both"
+}
 
 # Using context manager ensures proper cleanup
 with PhoneticAPIClient("[YOUR_API_KEY]") as api:
@@ -203,7 +218,10 @@ from apiverve_phoneticencoder.apiClient import PhoneticAPIClient
 # Enable debug mode
 api = PhoneticAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "word": "smith", "algorithm": "both" }
+query = {
+    "word": "smith",
+    "algorithm": "both"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -218,8 +236,12 @@ from apiverve_phoneticencoder.apiClient import PhoneticAPIClient
 
 api = PhoneticAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "word": "smith",
+    "algorithm": "both"
+}
+
 try:
-    query = { "word": "smith", "algorithm": "both" }
     result = api.execute(query)
     print(result)
 finally:
