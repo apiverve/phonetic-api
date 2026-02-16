@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/phonetic",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Phonetic Encoder generates phonetic codes for words using Soundex and Metaphone algorithms. These codes represent how words sound, enabling fuzzy matching of similar-sounding names.",
   "main": "index.js",
   "types": "index.d.ts",
