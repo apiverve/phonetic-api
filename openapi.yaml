@@ -19,7 +19,7 @@ servers:
 paths:
   /v1/phonetic:
     get:
-      summary: Encode Word
+      summary: Phonetic Encoder
       description: Get phonetic codes for a word
       operationId: phonetic
       parameters:
