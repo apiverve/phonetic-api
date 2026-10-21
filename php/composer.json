@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/phonetic",
+    "description": "Phonetic Encoder generates phonetic codes for words using Soundex and Metaphone algorithms. These codes represent how words sound, enabling fuzzy matching of similar-sounding names.",
+    "version": "1.2.2",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "phonetic",
+        "phonetic api",
+        "phonetic encoder api",
+        "soundex api",
+        "metaphone api",
+        "soundex"
+    ],
+    "homepage": "https://apiverve.com/marketplace/phonetic?utm_source=php&utm_medium=referral&utm_content=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/phonetic",
+        "source": "https://github.com/apiverve/phonetic-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Phonetic\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Phonetic\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
